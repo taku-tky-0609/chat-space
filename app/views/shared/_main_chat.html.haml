@@ -1,0 +1,39 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group
+      %p.chat-group test
+      .members
+        %h1.members-title Members : 
+        %ul
+          %li.member-name taku
+    .chat-main__edit 
+      = link_to "#", class: "edit__btn" do
+        Edit
+
+  .chat-main__message-list
+    .chat-post
+      %h2.chat-name 
+        masa
+        %span.message-date 2019/11/20 (Wed) 17:43:01
+      .chat-message おはよう！
+    .chat-post
+      %h2.chat-name 
+        masa
+        %span.message-date 2019/11/20 (Wed) 17:43:01
+      .chat-message こんにちは！
+    .chat-post
+      %h2.chat-name 
+        masa
+        %span.message-date 2019/11/20 (Wed) 17:43:01
+      .chat-message こんばんは！
+
+  .chat-main__message-form
+    %form
+      .form-box
+        %input.text-message{type: "text",name: "text", placeholder: "type a message"}
+        %label.image-message
+          = icon('fas', 'image')
+          %input.image-file{type: "file"}
+      %input.submit-btn{type:"submit", value:  "submit"}
+    
+      

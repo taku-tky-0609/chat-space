@@ -1,0 +1,25 @@
+.side-bar
+  .side-bar__user-name
+    .top-items
+      .top-times__name
+        taku
+      .top-items__icons
+        = link_to "#", class: "top-item__icons--edit" do
+          = icon('fas', 'edit', class: "top-items__icon")
+          %span<>
+        = link_to "#", class: "top-item__icons--cog" do
+          = icon('fas', 'cog', class: "top-items__icon")
+          %span<>
+  .side-bar__group-list
+    .side-bar__group
+      %p.side-bar__group--name teckcamp
+      %p.side-bar__group--message まだメッセージがありません
+    .side-bar__group
+      %p.side-bar__group--name teckcamp
+      %p.side-bar__group--message まだメッセージがありません
+    .side-bar__group
+      %p.side-bar__group--name teckcamp
+      %p.side-bar__group--message まだメッセージがありません
+    .side-bar__group
+      %p.side-bar__group--name teckcamp
+      %p.side-bar__group--message まだメッセージがありません

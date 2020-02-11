@@ -34,6 +34,8 @@ $word-color__one: #ffffff;
         color: #999999;
         font-size: 12px;
         list-style: none;
+        letter-spacing: normal;
+        font-weight: normal;
       }     
     }
     .edit__btn {
@@ -160,7 +162,9 @@ $word-color__one: #ffffff;
       height: calc(100vh - 100px);
       background-color:#2f3e51;
       padding: 20px 20px 0 20px;
+      
       .side-bar__group {
+        text-decoration: none;
         &--name {
           font-size: 15px;
           color: #ffffff;

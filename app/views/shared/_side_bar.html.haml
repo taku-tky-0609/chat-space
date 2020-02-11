@@ -13,17 +13,9 @@
   .side-bar__group-list
     - current_user.groups.each do |group|
       .side-bar__group
-        = link_to '#', class: "side-bar__group" do
+        = link_to edit_group(group.id), class: "side-bar__group" do
           %p.side-bar__group--name
             = group.name
           %p.side-bar__group--message まだメッセージがありません
-    -# .side-bar__group
-
-    -#   
-    -#   %p.side-bar__group--message まだメッセージがありません
-    -# .side-bar__group
-    -#   %p.side-bar__group--name teckcamp
-    -#  
-    -# .side-bar__group
-    -#   %p.side-bar__group--name teckcamp
-    -#   %p.side-bar__group--message まだメッセージがありません
+    
+  

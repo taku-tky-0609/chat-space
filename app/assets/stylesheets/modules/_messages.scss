@@ -27,8 +27,15 @@ $word-color__one: #ffffff;
         margin-bottom: 15px;
       }
       
-        .members {
+        .group-members {
         display: flex;
+        .members {
+          display: flex;
+
+          .member-name {
+            margin-left: 5px;
+          }
+        }
       }
       .members-title, .member-name{
         color: #999999;
@@ -58,20 +65,23 @@ $word-color__one: #ffffff;
     width: calc(100vw - 300px);
     background-color: #fafafa;
     padding: 35px 0 0 40px;
-    
-    .chat-name {
-      color: #333333;
-      font-size: 16px;
-      padding-bottom: 12px;
-      .message-date {
-        color: #999999;
-        font-size: 12px;
-      }
-    }
-    .chat-message {
-      color: #434a54;
-      font-size: 14px;
+    overflow: scroll;
+    .chat-post {
       padding-bottom: 46px;
+      .chat-name {
+        color: #333333;
+        font-size: 16px;
+        padding-bottom: 12px;
+        .message-date {
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+      .chat-message {
+        color: #434a54;
+        font-size: 14px;
+        
+      }
     }
   }
 
@@ -79,13 +89,12 @@ $word-color__one: #ffffff;
     height: 90px;
     width: calc(100vw - 300px);
     background-color: #d2d2d2;
-    position: absolute;
-    bottom: 0;
-    padding: 0 40px 0 50px;
-    form {
+    
+    padding: 20px 40px 20px 50px;
+    
+    .message-form {
       width: 100%;
       display: flex;
-      padding: 20px 0;
       .form-box {
         width: 100%;
         height: 50px;
@@ -93,18 +102,23 @@ $word-color__one: #ffffff;
       }
         .text-message {
           width: 100%;
-          height: 100%;
+          height: 50px;
           padding-left: 10px;
+          
         }
-        .image-message {
+        .form{
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
           right: 10px;
-         }
-         .image-file{
-          display: none;
-         }
+          .image-message {
+            cursor: pointer;
+           }
+           .image-file{
+            display: none;
+            cursor: pointer;
+           }
+        }
       .submit-btn {
         width: 100px;
         height: 50px;
